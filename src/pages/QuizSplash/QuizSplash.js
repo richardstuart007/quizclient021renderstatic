@@ -56,7 +56,7 @@ const QuizSplash = () => {
           QUIZZES
         </Typography>
         <Typography variant='h3' sx={{ marginTop: '8px' }}>
-          <a href='https://quizclient010-production.up.railway.app/'>Database Version</a>
+          <a href='https://quizclient021render.onrender.com/'>Database Version</a>
         </Typography>
         <Typography variant='subtitle2' sx={{ marginTop: '32px' }}>
           Alternatively click on the Continue button below to use the static version
