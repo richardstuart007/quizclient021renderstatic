@@ -51,29 +51,39 @@ const QuizSplash = () => {
         <Typography variant='subtitle2' sx={{ marginTop: '8px', color: 'green' }}>
           mobile: +64211460242
         </Typography>
-        <Typography variant='subtitle2' sx={{ marginTop: '32px', color: 'red' }}>
-          PLEASE SWITCH TO THE DATABASE VERSION SO THAT YOU CAN SIGN IN AND HAVE A HISTORY OF YOUR
-          QUIZZES
-        </Typography>
-        <Typography variant='h3' sx={{ marginTop: '8px' }}>
-          <a href='https://quizclient021render.onrender.com/'>Database Version</a>
-        </Typography>
-        <Typography variant='subtitle2' sx={{ marginTop: '32px' }}>
-          Alternatively click on the Continue button below to use the static version
-        </Typography>
         {/*.................................................................................................*/}
+        <Typography variant='subtitle2' sx={{ marginTop: '32px' }}>
+          Click on the button below to use new database version
+        </Typography>
+
+        <Grid item xs={12}>
+          <MyButton
+            color='secondary'
+            type='submit'
+            text='New Database Version'
+            value='Submit'
+            href='https://quizclient021render.onrender.com/'
+          />
+        </Grid>
+        {/*.................................................................................................*/}
+        <Typography variant='subtitle2' sx={{ marginTop: '32px' }}>
+          Alternatively click on the button below to use the old static version, soon to be disabled
+        </Typography>
+
         <Grid item xs={12}>
           <MyButton
             color='secondary'
             type='submit'
             text='Continue'
             value='Submit'
+            variant='outlined'
             onClick={() => {
               ValtioStore.v_PagePrevious = CurrentPage
               ValtioStore.v_Page = 'QuizRestart'
             }}
           />
         </Grid>
+        {/*.................................................................................................*/}
       </Container>
     </Grid>
   )
