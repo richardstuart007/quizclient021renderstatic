@@ -62,7 +62,7 @@ const QuizSplash = () => {
             type='submit'
             text='New Database Version'
             value='Submit'
-            href='https://quizclient021render.onrender.com/'
+            href='https://bridgeclient01.onrender.com/'
           />
         </Grid>
         {/*.................................................................................................*/}
